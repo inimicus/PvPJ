@@ -2,7 +2,7 @@ local addon = PVPJ
 
 function addon:LoadSettingsMenu()
 
-	local menu = LibStub("LibAddonMenu-2.0")
+	local menu = LibAddonMenu2
 	local default = addon.default
 
 	-- menu

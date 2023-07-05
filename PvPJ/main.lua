@@ -2,13 +2,13 @@ local addon = {
 	name = "PvPJ",
 	displayName = "|cFF3DA5PvP|r Journal",
 	displayNameShort = "|cFF3DA5PvPJ|r",
-	author = "Scootworks",
-	version = "26",
-	api = {100022, nil},
+	author = "Scootworks (Updated by g4rr3t)",
+	version = "27",
+	api = {101038, nil},
 	savedVarVersion = "1",
 }
 
-local LibSWF = LibStub("LibScootworksFunctions")
+local LibSWF = LibScootworksFunctions
 addon.LibSWF = LibSWF
 
 --------------

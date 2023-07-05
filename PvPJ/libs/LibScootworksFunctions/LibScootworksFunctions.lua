@@ -1,7 +1,4 @@
-local MAJOR, MINOR = "LibScootworksFunctions", 3
-local LibSWF, oldminor = LibStub:NewLibrary(MAJOR, MINOR)
-if not LibSWF then return end
-
+local LibSWF = {}
 
 ------------------
 -- LOCALIZATION --
@@ -136,3 +133,5 @@ local function ChatSystemShowOptions(originalFunc, ...)
 	ShowMenu(ZO_Menu.owner)
 end
 LibSWF:WrapFunction("ZO_ChatSystem_ShowOptions", ChatSystemShowOptions)
+
+LibScootworksFunctions = LibSWF
