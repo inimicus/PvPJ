@@ -18,11 +18,7 @@ local function ReturnSystemMessage(msg)
 	--[[
 	Send outputs always as system message
 	]]
-	if CHAT_SYSTEM.primaryContainer then
-		CHAT_SYSTEM.primaryContainer:OnChatEvent(nil, msg, CHAT_CATEGORY_SYSTEM)
-	else
-		CHAT_SYSTEM:AddMessage(msg)
-	end
+    CHAT_ROUTER:AddSystemMessage(msg)
 end
 
 function LibSWF:ChatOutput(msg, isDebugMessage, isInDebugMode, addonName, delayMs)
