@@ -114,7 +114,7 @@ end
 
 local function OnBattlegroundKill(_, killedPlayerCharacterName, killedPlayerDisplayName, _, killingPlayerCharacterName, _, _, battlegroundKillType, killingAbilityId)
 	UnregisterEventUpdate()
-	if battlegroundKillType == BATTLEGROUND_KILL_TYPE_KILLING_BLOW and not battlegroundKillType == BATTLEGROUND_KILL_TYPE_ASSIST then
+	if battlegroundKillType == BATTLEGROUND_KILL_TYPE_KILLING_BLOW then
 		-- debug
 		LibSWF:ChatOutput(zo_strformat("OnBattlegroundKill() sourceName: <<1>>, targetName: <<2>>, killingAbilityId: <<3>>", killingPlayerCharacterName, killedPlayerDisplayName, killingAbilityId), true, addon.savedVarCopy.debug, addon.name)
 		-- adding to kill table
