@@ -59,7 +59,9 @@ local function OnChatMessage(_, channelType, _, text, _, messageFromDisplayName)
 	if addon.savedVarCopy.allowGroupInvite then
 		if channelType >= CHAT_CHANNEL_GUILD_1 and channelType <= CHAT_CHANNEL_OFFICER_5 or channelType == CHAT_CHANNEL_WHISPER then
 			-- if string.lower(zo_strformat(text)) == string.lower(addon.savedVarCopy.keywordInvite) then
-			if text:lower() == addon.savedVarCopy.keywordLeader:lower() then
+			local keywordInvite = addon.savedVarCopy.keywordInvite:lower()
+			if text:lower() == keywordInvite then
+				LibSWF:ChatOutput(zo_strformat("<<1>> sent invite keyword <<2>>", messageFromDisplayName, keywordInvite), true, addon.savedVarCopy.debug, addon.name)
 				InviteMember(zo_strformat(messageFromDisplayName))
 			end
 		end
