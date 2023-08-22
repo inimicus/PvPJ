@@ -1,6 +1,6 @@
 ## Title: |cFF3DA5PvP|r Journal
 ## Author: Scootworks
-## APIVersion: 101038
+## APIVersion: 101039
 ## Version: 27
 ## AddOnVersion: 27
 ## SavedVariables: PvPJ_Save
