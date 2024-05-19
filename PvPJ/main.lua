@@ -4,7 +4,7 @@ local addon = {
 	displayNameShort = "|cFF3DA5PvPJ|r",
 	author = "Scootworks (Updated by g4rr3t)",
 	version = "27",
-	api = {101039, nil},
+	api = {101041, nil},
 	savedVarVersion = "1",
 }
 
